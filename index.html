@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETROMINit - Homepage</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="text-gray-800 bg-black font-montserrat">
+
+    
+    <header class="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-sm border-b border-white/10 shadow-lg rounded-b-3xl">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-10">
+          <a href="#" class="flex items-center gap-2">
+            <img src="./assets/img/petromin-logo.webp" alt="PETROMINit Logo" class="md:h-10 h-6 drop-shadow-lg">
+          </a>
+          <nav class="hidden md:flex gap-8 text-gray-700 font-semibold text-sm">
+            <a href="#" class="hover:lg:text-red-600 transition uppercase">Home</a>
+            <a href="#" class="hover:lg:text-red-600 transition uppercase">Book Service</a>
+            <a href="#" class="hover:lg:text-red-600 transition uppercase">Find Us</a>
+            <a href="#" class="hover:lg:text-red-600 transition uppercase">Rewards</a>
+            <a href="#" class="hover:lg:text-red-600 transition uppercase">Contact Us</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="flex items-center md:gap-2 gap-1.5 bg-white md:ring-2 ring-1 ring-inset ring-amber-800 rounded-full md:pr-3 pr-1.5 cursor-pointer shadow group/rewards hover:lg:scale-95 active:!scale-90 transition-all duration-300">
+            <div class="md:size-10 size-8 relative shrink-0 rounded-full bg-amber-800 flex items-center justify-center ring-2 ring-inset ring-white ring-offset-2 ring-offset-amber-800">
+              <img src="./assets/img/gold-medal.webp" alt="Gold Medal" class="md:size-6 size-4 group-hover/rewards:lg:scale-200 group-hover/rewards:lg:opacity-0 transition-all duration-300">
+              <svg class="md:size-6 size-4 text-amber-200 shrink-0 absolute inset-0 m-auto scale-0 opacity-0 group-hover/rewards:lg:scale-100 group-hover/rewards:lg:opacity-100 group-hover/rewards:lg:rotate-180 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <span class="font-bold text-amber-800 md:text-base text-sm tracking-wide">27,017</span>
+          </a>
+          <button class="relative text-gray-600 hover:lg:text-red-600 transition cursor-pointer">
+            <i class="fas fa-bell md:text-2xl text-xl"></i>
+            <span class="absolute top-0 right-0 block h-2 w-2 rounded-full ring-2 ring-white bg-red-500"></span>
+          </button>
+          <div class="relative" id="profileDropdownWrapper">
+            <button id="profileDropdownBtn" type="button" class="flex items-center gap-2 text-gray-700 hover:lg:text-red-600 transition focus:outline-none cursor-pointer">
+              <div class="md:size-9 size-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center md:text-base text-sm font-bold text-gray-200 shadow">KS</div>
+              <span class="hidden md:block font-semibold">Kaif S</span>
+              <svg class="size-4 ml-1 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="profileDropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg p-2 z-50 border border-gray-100">
+              <a href="#" class="block px-4 py-2 rounded-md text-sm duration-300 text-gray-700 hover:lg:bg-gray-100">My Profile</a>
+              <a href="#" class="block px-4 py-2 rounded-md text-sm duration-300 text-gray-700 hover:lg:bg-gray-100">Settings</a>
+              <a href="#" class="block px-4 py-2 rounded-md text-sm duration-300 text-gray-700 hover:lg:bg-rose-100 hover:lg:text-rose-800">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <main class="">
+
+      <section class="heroSection flex w-full pt-16 md:pt-24 overflow-hidden relative bg-white">
+        <div class="swiper heroSwiper md:min-h-[500px] md:h-[500px] w-full relative !z-10 max-h-[750px]">
+            <div class="swiper-wrapper *:py-5 *:*:flex *:*:h-full *:*:items-center *:*:justify-center *:*:rounded-2xl *:*:w-full *:*:relative *:*:aspect-[860/460] *:*:overflow-hidden *:*:duration-500 *:*:shadow-lg *:*:lg:translate-x-[10%]">
+                <div class="swiper-slide group [&.swiper-slide-prev]:z-10">
+                    <div class="group-[.swiper-slide-active]:z-10 lg:group-[.swiper-slide-active]:w-[147.5%] lg:group-[.swiper-slide-next]:w-[55%] lg:group-[.swiper-slide-active]:translate-x-[6%] lg:group-[.swiper-slide-next]:translate-x-[101%] bg-[#333333] before:bg-gradient-to-b before:absolute before:inset-0 before:z-10 before:mix-blend-multiply before:from-gray-950/60 before:via-gray-900/60 before:to-gray-900/70">
+                        <img 
+                            class="size-full object-cover object-right absolute inset-0 z-0 rounded-2xl aspect-[860/460]"
+                            loading="lazy"
+                            width="860"
+                            height="460"
+                            src="./assets/img/banner/banner4.webp"
+                            alt="unlock-access-to-bespoke-apps-and-product-innovation-with-us"
+                        >
+                        <a class="swiper-button-prev opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-prev]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <a class="swiper-button-next opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-next]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <div class="relative md:p-10 p-3.5 max-md:self-end overflow-hidden duration-150 z-10 opacity-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-next]:w-[80%] group-[.swiper-slide-next]:mr-auto mr-auto">
+                            <div class="duration-300 font-light text-white 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">
+                                <span class="inline">Welcome back, </span>
+                                <span class="font-bold text-white inline">Kaif S! 👋</span>
+                            </div>
+                            <div class="transition-transform max-md:text-sm text-base text-white pt-5 duration-0 delay-500 -translate-x-full opacity-0 group-[.swiper-slide-active]:translate-x-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-active]:w-[80%] group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:text-[0px] group-[.swiper-slide-next]:delay-0 md:block hidden text-balance font-medium">Your car is in good hands. Let’s keep it that way with timely care and smart insights.</div>
+                            <div class="md:mt-10 mt-3 flex gap-4">
+                                <a href="./index.html#dashboard" class="duration-0 translate-y-[200%] transition-all delay-[700ms] opacity-0 group-[.swiper-slide-active]:translate-y-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:!h-0 group-[.swiper-slide-next]:overflow-hidden group-[.swiper-slide-next]:delay-0 inline-flex justify-center rounded-full max-md:text-xs text-sm md:font-semibold font-medium max-md:py-1.5 py-3 md:px-4 px-3 md:ring-2 ring-1 ring-gray-200 bg-slate-900 text-white hover:bg-slate-700">
+                                    <span>
+                                        <span class="inline-flex items-center gap-1">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-5 size-4"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+                                          Dashboard
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide group [&.swiper-slide-prev]:z-10">
+                    <div class="group-[.swiper-slide-active]:z-10 lg:group-[.swiper-slide-active]:w-[147.5%] lg:group-[.swiper-slide-next]:w-[55%] lg:group-[.swiper-slide-active]:translate-x-[6%] lg:group-[.swiper-slide-next]:translate-x-[101%] bg-[#333333] before:bg-gradient-to-b before:absolute before:inset-0 before:z-10 before:mix-blend-multiply before:from-red-950/60 before:via-red-900/60 before:to-red-900/70">
+                        <img 
+                            class="size-full object-cover object-right absolute inset-0 z-0 rounded-2xl aspect-[860/460]"
+                            loading="lazy"
+                            width="860"
+                            height="460"
+                            src="./assets/img/banner/banner5.webp"
+                            alt="unlock-access-to-bespoke-apps-and-product-innovation-with-us"
+                        >
+                        <a class="swiper-button-prev opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-prev]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <a class="swiper-button-next opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-next]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <div class="relative md:p-10 p-3.5 max-md:self-end overflow-hidden duration-150 z-10 opacity-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-next]:w-[80%] group-[.swiper-slide-next]:mr-auto mr-auto">
+                            <div class="duration-300 font-light text-white 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">
+                                <span class="inline">Your Next Service is </span>
+                                <span class="font-bold text-white inline">Due on 06 Nov 2025</span>
+                            </div>
+                            <div class="transition-transform max-md:text-sm text-base text-white pt-5 duration-0 delay-500 -translate-x-full opacity-0 group-[.swiper-slide-active]:translate-x-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-active]:w-[80%] group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:text-[0px] group-[.swiper-slide-next]:delay-0 md:block hidden text-balance font-medium">Don’t miss it — book a garage visit now and keep your ride smooth and safe.</div>
+                            <div class="md:mt-10 mt-3 flex gap-4">
+                              <a href="#" class="duration-0 translate-y-[200%] transition-all delay-[800ms] opacity-0 group-[.swiper-slide-active]:translate-y-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:!h-0 group-[.swiper-slide-next]:overflow-hidden group-[.swiper-slide-next]:delay-0 inline-flex justify-center rounded-full max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-rose-800 text-white ring-2 ring-rose-900 hover:bg-rose-700 hover:ring-slate-rose-900/15">
+                                    <span class="flex items-center gap-2">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-5 size-4"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+                                      Book Now
+                                    </span>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide group [&.swiper-slide-prev]:z-10">
+                    <div class="group-[.swiper-slide-active]:z-10 lg:group-[.swiper-slide-active]:w-[147.5%] lg:group-[.swiper-slide-next]:w-[55%] lg:group-[.swiper-slide-active]:translate-x-[6%] lg:group-[.swiper-slide-next]:translate-x-[101%] bg-[#333333] before:bg-gradient-to-b before:absolute before:inset-0 before:z-10 before:mix-blend-multiply before:from-orange-950/60 before:via-orange-900/60 before:to-orange-900/70">
+                        <img 
+                            class="size-full object-cover object-right absolute inset-0 z-0 rounded-2xl aspect-[860/460]"
+                            loading="lazy"
+                            width="860"
+                            height="460"
+                            src="./assets/img/banner/banner6.webp"
+                            alt="unlock-access-to-bespoke-apps-and-product-innovation-with-us"
+                        >
+                        <a class="swiper-button-prev opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-prev]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <a class="swiper-button-next opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-next]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <div class="relative md:p-10 p-3.5 max-md:self-end overflow-hidden duration-150 z-10 opacity-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-next]:w-[80%] group-[.swiper-slide-next]:mr-auto mr-auto">
+                            <div class="duration-300 font-light text-white 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">
+                                <span class="inline">View Your Complete </span>
+                                <span class="font-bold text-white inline">Service History</span>
+                            </div>
+                            <div class="transition-transform max-md:text-sm text-base text-white pt-5 duration-0 delay-500 -translate-x-full opacity-0 group-[.swiper-slide-active]:translate-x-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-active]:w-[80%] group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:text-[0px] group-[.swiper-slide-next]:delay-0 md:block hidden text-balance font-medium">From oil changes to tyre rotations — all your vehicle service logs, stored safely for you.</div>
+                            <div class="md:mt-10 mt-3 flex gap-4">
+                                <a href="#" class="duration-0 translate-y-[200%] transition-all delay-[700ms] opacity-0 group-[.swiper-slide-active]:translate-y-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:!h-0 group-[.swiper-slide-next]:overflow-hidden group-[.swiper-slide-next]:delay-0 inline-flex justify-center rounded-full max-md:text-xs text-sm md:font-semibold font-medium max-md:py-1.5 py-3 md:px-4 px-3 md:ring-2 ring-1 ring-gray-200 bg-slate-900 text-white hover:bg-slate-700">
+                                    <span>
+                                        <span class="inline-flex items-center gap-2">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-5 size-4"><path d="M16 14v2.2l1.6 1"/><path d="M16 4h2a2 2 0 0 1 2 2v.832"/><path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2"/><circle cx="16" cy="16" r="6"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+                                          View History
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide group [&.swiper-slide-prev]:z-10">
+                    <div class="group-[.swiper-slide-active]:z-10 lg:group-[.swiper-slide-active]:w-[147.5%] lg:group-[.swiper-slide-next]:w-[55%] lg:group-[.swiper-slide-active]:translate-x-[6%] lg:group-[.swiper-slide-next]:translate-x-[101%] bg-[#333333] before:bg-gradient-to-b before:absolute before:inset-0 before:z-10 before:mix-blend-multiply before:from-slate-950/60 before:via-slate-900/60 before:to-slate-900/70">
+                        <img 
+                            class="size-full object-cover object-right absolute inset-0 z-0 rounded-2xl aspect-[860/460]"
+                            loading="lazy"
+                            width="860"
+                            height="460"
+                            src="./assets/img/banner/banner7.webp"
+                            alt="unlock-access-to-bespoke-apps-and-product-innovation-with-us"
+                        >
+                        <a class="swiper-button-prev opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-prev]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <a class="swiper-button-next opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-next]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <div class="relative md:p-10 p-3.5 max-md:self-end overflow-hidden duration-150 z-10 opacity-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-next]:w-[80%] group-[.swiper-slide-next]:mr-auto mr-auto">
+                            <div class="duration-300 font-light text-white 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">
+                                <span class="inline">Need Help </span>
+                                <span class="font-bold text-white inline">Nearby?</span>
+                            </div>
+                            <div class="transition-transform max-md:text-sm text-base text-white pt-5 duration-0 delay-500 -translate-x-full opacity-0 group-[.swiper-slide-active]:translate-x-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-active]:w-[80%] group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:text-[0px] group-[.swiper-slide-next]:delay-0 md:block hidden text-balance font-medium">Locate verified garages near you. Book with one tap and track live updates.</div>
+                            <div class="md:mt-10 mt-3 flex gap-4">
+                              <a href="#" class="duration-0 translate-y-[200%] transition-all delay-[800ms] opacity-0 group-[.swiper-slide-active]:translate-y-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:!h-0 group-[.swiper-slide-next]:overflow-hidden group-[.swiper-slide-next]:delay-0 inline-flex justify-center rounded-full max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-rose-800 text-white ring-2 ring-rose-900 hover:bg-rose-700 hover:ring-slate-rose-900/15">
+                                    <span class="flex items-center gap-2">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-5 size-4"><line x1="2" x2="5" y1="12" y2="12"/><line x1="19" x2="22" y1="12" y2="12"/><line x1="12" x2="12" y1="2" y2="5"/><line x1="12" x2="12" y1="19" y2="22"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></svg>
+                                      Find Garage
+                                    </span>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide group [&.swiper-slide-prev]:z-10">
+                    <div class="group-[.swiper-slide-active]:z-10 lg:group-[.swiper-slide-active]:w-[147.5%] lg:group-[.swiper-slide-next]:w-[55%] lg:group-[.swiper-slide-active]:translate-x-[6%] lg:group-[.swiper-slide-next]:translate-x-[101%] bg-[#333333] before:bg-gradient-to-b before:absolute before:inset-0 before:z-10 before:mix-blend-multiply before:from-red-950/60 before:via-red-900/60 before:to-red-900/70">
+                        <img 
+                            class="size-full object-cover object-right absolute inset-0 z-0 rounded-2xl aspect-[860/460]"
+                            loading="lazy"
+                            width="860"
+                            height="460"
+                            src="./assets/img/banner/banner8.webp"
+                            alt="unlock-access-to-bespoke-apps-and-product-innovation-with-us"
+                        >
+                        <a class="swiper-button-prev opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-prev]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <a class="swiper-button-next opacity-0 absolute !inset-0 !mt-0 group-[.swiper-slide-next]:!block !hidden !z-[11] !w-full !h-full"></a>
+                        <div class="relative md:p-10 p-3.5 max-md:self-end overflow-hidden duration-150 z-10 opacity-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-next]:w-[80%] group-[.swiper-slide-next]:mr-auto mr-auto">
+                            <div class="duration-300 font-light text-white 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">
+                                <span class="inline">Refer & Earn </span>
+                                <span class="font-bold text-white inline">Free Service Points</span>
+                            </div>
+                            <div class="transition-transform max-md:text-sm text-base text-white pt-5 duration-0 delay-500 -translate-x-full opacity-0 group-[.swiper-slide-active]:translate-x-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-active]:w-[80%] group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:text-[0px] group-[.swiper-slide-next]:delay-0 md:block hidden text-balance font-medium">Invite friends, earn rewards on every successful signup or service booking they do.</div>
+                            <div class="md:mt-10 mt-3 flex gap-4">
+                                <a href="#" class="duration-0 translate-y-[200%] transition-all delay-[700ms] opacity-0 group-[.swiper-slide-active]:translate-y-0 group-[.swiper-slide-active]:opacity-100 group-[.swiper-slide-active]:duration-500 group-[.swiper-slide-next]:duration-100 group-[.swiper-slide-next]:!h-0 group-[.swiper-slide-next]:overflow-hidden group-[.swiper-slide-next]:delay-0 inline-flex justify-center rounded-full max-md:text-xs text-sm md:font-semibold font-medium max-md:py-1.5 py-3 md:px-4 px-3 md:ring-2 ring-1 ring-gray-200 bg-slate-900 text-white hover:bg-slate-700">
+                                    <span>
+                                        <span class="inline-flex items-center gap-1">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-5 size-4"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+                                          Share & Earn
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <a class="swiper-button-prev swiper-button-prevHero [&.swiper-button-disabled]:!hidden max-lg:!hidden !top-[calc(100%-50%-20px)] !right-4 !left-auto !w-10 !md: rou h-6nded-full flex items-center justify-center p-0 after:hidden duration-200 opacity-80 hover:opacity-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="size-full" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path fill="currentColor" stroke="none" d="m12 2 .324.001.318.004.616.017.299.013.579.034.553.046c4.785.464 6.732 2.411 7.196 7.196l.046.553.034.579c.005.098.01.198.013.299l.017.616L22 12l-.005.642-.017.616-.013.299-.034.579-.046.553c-.464 4.785-2.411 6.732-7.196 7.196l-.553.046-.579.034c-.098.005-.198.01-.299.013l-.616.017L12 22l-.642-.005-.616-.017-.299-.013-.579-.034-.553-.046c-4.785-.464-6.732-2.411-7.196-7.196l-.046-.553-.034-.579a28.058 28.058 0 0 1-.013-.299l-.017-.616C2.002 12.432 2 12.218 2 12l.001-.324.004-.318.017-.616.013-.299.034-.579.046-.553c.464-4.785 2.411-6.732 7.196-7.196l.553-.046.579-.034c.098-.005.198-.01.299-.013l.616-.017c.21-.003.424-.005.642-.005zm1.707 6.293a1 1 0 0 0-1.414 0l-3 3-.083.094a1 1 0 0 0 .083 1.32l3 3 .094.083a1 1 0 0 0 1.32-.083l.083-.094a1 1 0 0 0-.083-1.32L11.415 12l2.292-2.293.083-.094a1 1 0 0 0-.083-1.32z" class="fill-white"/></svg>
+            </a>
+            <a class="swiper-button-next swiper-button-nextHero [&.swiper-button-disabled]:!hidden max-lg:!hidden !top-[calc(100%-50%--20px)] !right-4 !left-auto !w-10 !md: rou h-6nded-full flex items-center justify-center p-0 after:hidden duration-200 opacity-80 hover:opacity-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="size-full" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path fill="currentColor" stroke="none" d="M12 2c-.218 0-.432.002-.642.005l-.616.017-.299.013-.579.034-.553.046c-4.785.464-6.732 2.411-7.196 7.196l-.046.553-.034.579c-.005.098-.01.198-.013.299l-.017.616-.004.318L2 12c0 .218.002.432.005.642l.017.616.013.299.034.579.046.553c.464 4.785 2.411 6.732 7.196 7.196l.553.046.579.034c.098.005.198.01.299.013l.616.017L12 22l.642-.005.616-.017.299-.013.579-.034.553-.046c4.785-.464 6.732-2.411 7.196-7.196l.046-.553.034-.579c.005-.098.01-.198.013-.299l.017-.616L22 12l-.005-.642-.017-.616-.013-.299-.034-.579-.046-.553c-.464-4.785-2.411-6.732-7.196-7.196l-.553-.046-.579-.034a28.058 28.058 0 0 0-.299-.013l-.616-.017-.318-.004L12 2zm-1.707 6.293a1 1 0 0 1 1.32-.083l.094.083 3 3a1 1 0 0 1 .083 1.32l-.083.094-3 3a1 1 0 0 1-1.497-1.32l.083-.094L12.585 12l-2.292-2.293a1 1 0 0 1-.083-1.32l.083-.094z" class="fill-white"/></svg>
+            </a>
+        
+        </div>
+        
+        
+      </section>
+
+      <section class="md:py-10 bg-white scroll-mt-20" id="dashboard">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="flex flex-wrap md:gap-y-6 gap-y-3 md:-mx-6 -mx-3 items-stretch">
+            <div class="md:w-1/2 w-full px-3">
+              <a href="#" class="w-full cursor-pointer bg-gradient-to-br from-[#ED3450] to-[#A90F27] md:rounded-4xl rounded-2xl md:pl-6 pl-4 flex relative group/card h-full">
+                <div class="absolute top-0 right-0 inline-flex bg-white pl-4 pb-4 rounded-bl-[46px] max-md:pl-2 max-md:pb-2 max-md:rounded-bl-[22px]">
+                  <svg class="absolute top-0 left-px -translate-x-full max-md:w-4 max-md:h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                  <svg class="absolute bottom-px -right-px translate-y-full max-md:w-4 max-md:h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                  <div class="inline-flex items-center justify-center md:size-16 size-9 rounded-full bg-gradient-to-bl from-[#ED3551] to-[#990F24] group-hover/card:lg:rotate-45 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-8 size-3.5 text-white"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </div>
+                </div>
+                <div class="w-1/2 flex flex-col md:py-10 py-6 md:gap-5 gap-3">
+                  <div class="w-full 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold text-white">My Rewards</div>
+                  <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white">Track your points and redeem exciting rewards</div>
+                  <div class="w-full 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-black text-white inline-flex items-center font-montserrat">
+                    <img src="./assets/img/gold-medal.webp" alt="Gold Medal" class="md:size-10 size-5 mr-2">
+                    <span>1,730</span>
+                  </div>
+                </div>
+                <div class="w-1/2 px-3 pt-20 flex justify-end">
+                  <img src="./assets/img/myRewards.webp" alt="My Rewards" class="md:max-w-72 sm:max-w-48 max-w-28 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                </div>
+              </a>
+            </div>
+            <div class="md:w-1/2 w-full flex flex-wrap md:gap-y-6 gap-y-3">
+              <div class="w-full flex">
+                <div class="w-1/2 md:px-3 px-1.5 h-full">
+                  <a href="#" class="w-full h-full cursor-pointer bg-gradient-to-br from-[#FF7D15] to-[#ffc60c] md:rounded-4xl rounded-2xl md:pl-6 pl-3 flex flex-wrap relative group/card">
+                    <div class="absolute top-0 right-0 inline-flex bg-white pl-2 pb-2 rounded-bl-[22px]">
+                      <svg class="absolute top-0 left-px -translate-x-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <svg class="absolute bottom-px -right-px translate-y-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <div class="inline-flex items-center justify-center size-9 rounded-full bg-gradient-to-bl from-[#FF7D15] to-[#ffc60c] group-hover/card:lg:rotate-45 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5 text-white"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </div>
+                    </div>
+                    <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 pt-3">
+                      <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-bold text-white text-balance">Refer & Earn</div>
+                      <div class="w-full md:text-xs text-[10px] font-medium text-white">Invite friends and earn exciting rewards together</div>
+                    </div>
+                    <div class="w-full md:px-3 pl-4 flex justify-end max-md:pb-3 md:-mt-20 -mt-14">
+                      <img src="./assets/img/referAndEarn.webp" alt="Refer & Earn" class="md:max-w-32 sm:max-w-24 max-w-20 pl-6 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                    </div>
+                  </a>
+                </div>
+                <div class="w-1/2 md:px-3 px-1.5 h-full">
+                  <a href="#" class="w-full h-full cursor-pointer bg-gradient-to-br from-[#FF7D15] to-[#ffc60c] md:rounded-4xl rounded-2xl md:pl-6 pl-3 flex flex-wrap relative group/card">
+                    <div class="absolute top-0 right-0 inline-flex bg-white pl-2 pb-2 rounded-bl-[22px]">
+                      <svg class="absolute top-0 left-px -translate-x-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <svg class="absolute bottom-px -right-px translate-y-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <div class="inline-flex items-center justify-center size-9 rounded-full bg-gradient-to-bl from-[#FF7D15] to-[#ffc60c] group-hover/card:lg:rotate-45 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5 text-white"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </div>
+                    </div>
+                    <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 pt-3">
+                      <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-bold text-white text-balance">Find Us Book Now</div>
+                      <div class="w-full md:text-xs text-[10px] font-medium text-white">Refer with your friends & earn more benefits</div>
+                    </div>
+                    <div class="w-full md:px-3 pl-4 flex justify-end max-md:pb-3 md:-mt-20 -mt-14">
+                      <img src="./assets/img/findUsBookNow.webp" alt="Refer and Earn" class="md:max-w-32 sm:max-w-24 max-w-20 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full flex px-3">
+                <a href="#" class="w-full h-full cursor-pointer ring-2 ring-inset ring-gray-200 bg-gradient-to-br from-[#FFFFFF] to-[#EDEDED] md:rounded-4xl rounded-2xl md:pl-6 pl-3 flex flex-wrap relative group/card">
+                  <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 pt-3">
+                    <div class="w-full xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-base font-bold text-[#333333] text-balance">Service History</div>
+                    <div class="w-full md:text-base text-sm font-semibold text-[#333333]">View all your past service records easily</div>
+                  </div>
+                  <div class="w-full md:px-3 pl-4 flex justify-end max-md:pb-3 -mt-10">
+                    <img src="./assets/img/serviceHistory.webp" alt="Service History" class="md:max-w-32 sm:max-w-24 max-w-20 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="md:w-1/2 w-full flex flex-wrap md:gap-y-6 gap-y-3">
+              <div class="w-full flex px-3">
+                <a href="#" class="w-full h-full cursor-pointer ring-2 ring-inset ring-gray-200 bg-gradient-to-br from-[#FFFFFF] to-[#EDEDED] md:rounded-4xl rounded-2xl md:pl-6 pl-3 flex flex-wrap relative group/card">
+                  <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 pt-3">
+                    <div class="w-full xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-base font-bold text-[#333333] text-balance">Service Reminder</div>
+                    <div class="w-full md:text-base text-sm font-semibold text-[#333333]">Never miss a service with timely reminders</div>
+                  </div>
+                  <div class="w-full md:px-3 pl-4 flex justify-end max-md:pb-3 -mt-10">
+                    <img src="./assets/img/serviceReminder.webp" alt="Service Reminder" class="md:max-w-32 sm:max-w-24 max-w-20 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                  </div>
+                </a>
+              </div>
+              <div class="w-full flex">
+                <div class="w-1/2 md:px-3 px-1.5 h-full">
+                  <a href="#" class="w-full h-full cursor-pointer bg-gradient-to-br from-[#FF7D15] to-[#ffc60c] md:rounded-4xl rounded-2xl md:pl-6 pl-3 flex flex-wrap relative group/card">
+                    <div class="absolute top-0 right-0 inline-flex bg-white pl-2 pb-2 rounded-bl-[22px]">
+                      <svg class="absolute top-0 left-px -translate-x-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <svg class="absolute bottom-px -right-px translate-y-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <div class="inline-flex items-center justify-center size-9 rounded-full bg-gradient-to-bl from-[#FF7D15] to-[#ffc60c] group-hover/card:lg:rotate-45 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5 text-white"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </div>
+                    </div>
+                    <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 pt-3">
+                      <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-bold text-white text-balance">Coupons</div>
+                      <div class="w-full md:text-xs text-[10px] font-medium text-white">Save more with exclusive discount coupons</div>
+                    </div>
+                    <div class="w-full md:px-3 pl-4 flex justify-end max-md:pb-3 -mt-10">
+                      <img src="./assets/img/cuopons.webp" alt="Coupons" class="md:max-w-32 sm:max-w-24 max-w-20 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                    </div>
+                  </a>
+                </div>
+                <div class="w-1/2 md:px-3 px-1.5 h-full">
+                  <a href="#" class="w-full h-full cursor-pointer bg-gradient-to-br from-[#FF7D15] to-[#ffc60c] md:rounded-4xl rounded-2xl md:pl-6 pl-3 flex flex-wrap relative group/card">
+                    <div class="absolute top-0 right-0 inline-flex bg-white pl-2 pb-2 rounded-bl-[22px]">
+                      <svg class="absolute top-0 left-px -translate-x-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <svg class="absolute bottom-px -right-px translate-y-full w-4 h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                      <div class="inline-flex items-center justify-center size-9 rounded-full bg-gradient-to-bl from-[#FF7D15] to-[#ffc60c] group-hover/card:lg:rotate-45 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5 text-white"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </div>
+                    </div>
+                    <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 pt-3">
+                      <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-bold text-white text-balance">Contact Us</div>
+                      <div class="w-full md:text-xs text-[10px] font-medium text-white">We’re here to help you anytime</div>
+                    </div>
+                    <div class="w-full md:px-3 pl-4 flex justify-end max-md:pb-3 -mt-10">
+                      <img src="./assets/img/contactUs.webp" alt="Contact Us" class="md:max-w-32 sm:max-w-24 max-w-20 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 w-full px-3">
+              <a href="#" class="w-full cursor-pointer bg-gradient-to-br from-[#ED3450] to-[#A90F27] md:rounded-4xl rounded-2xl md:pl-6 pl-4 flex relative group/card h-full">
+                <div class="absolute top-0 right-0 inline-flex bg-white pl-4 pb-4 rounded-bl-[46px] max-md:pl-2 max-md:pb-2 max-md:rounded-bl-[22px]">
+                  <svg class="absolute top-0 left-px -translate-x-full max-md:w-4 max-md:h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                  <svg class="absolute bottom-px -right-px translate-y-full max-md:w-4 max-md:h-auto" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 34C32.6 6.8 10.8333 0 0 0H33V34Z" fill="white"/></svg>
+                  <div class="inline-flex items-center justify-center md:size-16 size-9 rounded-full bg-gradient-to-bl from-[#ED3551] to-[#990F24] group-hover/card:lg:rotate-45 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="md:size-8 size-3.5 text-white"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </div>
+                </div>
+                <div class="w-1/2 flex flex-col md:py-10 py-6 md:gap-5 gap-3">
+                  <div class="w-full 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold text-white">My Booking</div>
+                  <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white">Check and manage all your service bookings</div>
+                  <div class="w-full 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-black text-white inline-flex items-center font-montserrat">
+                    <!-- <img src="./assets/img/gold-medal.webp" alt="Gold Medal" class="size-10 mr-2"> -->
+                    <span>08 July</span>
+                  </div>
+                </div>
+                <div class="w-1/2 px-3 pt-20 flex justify-end">
+                  <img src="./assets/img/myBooking.webp" alt="My Booking" class="md:max-w-72 sm:max-w-48 max-w-28 w-full object-contain object-bottom-right rounded-tr-3xl rounded-br-3xl group-hover/card:lg:scale-95 transition-transform duration-300">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col md:gap-8 gap-4 w-full py-10 sm:py-16 overflow-hidden relative bg-white">
+        <div class="flex flex-col items-center gap-3">
+          <div class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold text-gray-800 text-center text-balance">Special Offers Just for You</div>
+          <div class="lg:text-base md:text-sm text-xs font-medium text-gray-800 text-center text-balance">Unlock exclusive discounts, cashback, and service deals. Limited time only — grab them now!</div>
+        </div>
+        <div class="swiper spacialOffers w-full relative !z-10">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide group/slide py-6">
+                  <a href="#" class="size-full cursor-pointer relative flex items-center justify-center overflow-hidden group-[.swiper-slide-active]/slide:scale-105 rounded-2xl transition-transform duration-500">
+                    <img src="./assets/img/offers/offer1.webp" alt="Hero Image 1" class="size-full object-cover object-left rounded-2xl aspect-[16/8] group-hover/slide:lg:scale-105 transition-transform duration-500">
+                  </a>
+                </div>
+                <div class="swiper-slide group/slide py-6">
+                  <a href="#" class="size-full cursor-pointer relative flex items-center justify-center overflow-hidden group-[.swiper-slide-active]/slide:scale-105 rounded-2xl transition-transform duration-500">
+                    <img src="./assets/img/offers/offer2.webp" alt="Hero Image 1" class="size-full object-cover object-left rounded-2xl aspect-[16/8] group-hover/slide:lg:scale-105 transition-transform duration-500">
+                  </a>
+                </div>
+                <div class="swiper-slide group/slide py-6">
+                  <a href="#" class="size-full cursor-pointer relative flex items-center justify-center overflow-hidden group-[.swiper-slide-active]/slide:scale-105 rounded-2xl transition-transform duration-500">
+                    <img src="./assets/img/offers/offer3.webp" alt="Hero Image 1" class="size-full object-cover object-left rounded-2xl aspect-[16/8] group-hover/slide:lg:scale-105 transition-transform duration-500">
+                  </a>
+                </div>
+                <div class="swiper-slide group/slide py-6">
+                  <a href="#" class="size-full cursor-pointer relative flex items-center justify-center overflow-hidden group-[.swiper-slide-active]/slide:scale-105 rounded-2xl transition-transform duration-500">
+                    <img src="./assets/img/offers/offer4.webp" alt="Hero Image 1" class="size-full object-cover object-left rounded-2xl aspect-[16/8] group-hover/slide:lg:scale-105 transition-transform duration-500">
+                  </a>
+                </div>
+                <div class="swiper-slide group/slide py-6">
+                  <a href="#" class="size-full cursor-pointer relative flex items-center justify-center overflow-hidden group-[.swiper-slide-active]/slide:scale-105 rounded-2xl transition-transform duration-500">
+                    <img src="./assets/img/offers/offer5.webp" alt="Hero Image 1" class="size-full object-cover object-left rounded-2xl aspect-[16/8] group-hover/slide:lg:scale-105 transition-transform duration-500">
+                  </a>
+                </div>
+            </div>
+        
+            <a class="swiper-button-prev swiper-button-prevHero [&.swiper-button-disabled]:!hidden max-lg:!hidden !top-[calc(100%-50%-20px)] !right-4 !left-auto !w-10 !md: rou h-6nded-full flex items-center justify-center p-0 after:hidden duration-200 opacity-80 hover:opacity-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="size-full" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path fill="currentColor" stroke="none" d="m12 2 .324.001.318.004.616.017.299.013.579.034.553.046c4.785.464 6.732 2.411 7.196 7.196l.046.553.034.579c.005.098.01.198.013.299l.017.616L22 12l-.005.642-.017.616-.013.299-.034.579-.046.553c-.464 4.785-2.411 6.732-7.196 7.196l-.553.046-.579.034c-.098.005-.198.01-.299.013l-.616.017L12 22l-.642-.005-.616-.017-.299-.013-.579-.034-.553-.046c-4.785-.464-6.732-2.411-7.196-7.196l-.046-.553-.034-.579a28.058 28.058 0 0 1-.013-.299l-.017-.616C2.002 12.432 2 12.218 2 12l.001-.324.004-.318.017-.616.013-.299.034-.579.046-.553c.464-4.785 2.411-6.732 7.196-7.196l.553-.046.579-.034c.098-.005.198-.01.299-.013l.616-.017c.21-.003.424-.005.642-.005zm1.707 6.293a1 1 0 0 0-1.414 0l-3 3-.083.094a1 1 0 0 0 .083 1.32l3 3 .094.083a1 1 0 0 0 1.32-.083l.083-.094a1 1 0 0 0-.083-1.32L11.415 12l2.292-2.293.083-.094a1 1 0 0 0-.083-1.32z" class="fill-white"/></svg>
+            </a>
+            <a class="swiper-button-next swiper-button-nextHero [&.swiper-button-disabled]:!hidden max-lg:!hidden !top-[calc(100%-50%--20px)] !right-4 !left-auto !w-10 !md: rou h-6nded-full flex items-center justify-center p-0 after:hidden duration-200 opacity-80 hover:opacity-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="size-full" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path fill="currentColor" stroke="none" d="M12 2c-.218 0-.432.002-.642.005l-.616.017-.299.013-.579.034-.553.046c-4.785.464-6.732 2.411-7.196 7.196l-.046.553-.034.579c-.005.098-.01.198-.013.299l-.017.616-.004.318L2 12c0 .218.002.432.005.642l.017.616.013.299.034.579.046.553c.464 4.785 2.411 6.732 7.196 7.196l.553.046.579.034c.098.005.198.01.299.013l.616.017L12 22l.642-.005.616-.017.299-.013.579-.034.553-.046c4.785-.464 6.732-2.411 7.196-7.196l.046-.553.034-.579c.005-.098.01-.198.013-.299l.017-.616L22 12l-.005-.642-.017-.616-.013-.299-.034-.579-.046-.553c-.464-4.785-2.411-6.732-7.196-7.196l-.553-.046-.579-.034a28.058 28.058 0 0 0-.299-.013l-.616-.017-.318-.004L12 2zm-1.707 6.293a1 1 0 0 1 1.32-.083l.094.083 3 3a1 1 0 0 1 .083 1.32l-.083.094-3 3a1 1 0 0 1-1.497-1.32l.083-.094L12.585 12l-2.292-2.293a1 1 0 0 1-.083-1.32l.083-.094z" class="fill-white"/></svg>
+            </a>
+        
+        </div>
+        
+        
+      </section>
+
+      
+      <section class="flex flex-col md:gap-8 gap-4 w-full py-10 bg-gray-100 sm:py-16">
+        <div class="flex flex-col items-center gap-3">
+          <div class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold text-gray-800 text-center text-balance">Frequently Asked Questions</div>
+          <div class="lg:text-base md:text-sm text-xs font-medium text-gray-800 text-center text-balance">Got questions? We’ve got answers. Explore topics like rewards, account management, support, and more to help you make the most of your experience.</div>
+        </div>
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
+          <div class="flex flex-col lg:flex-row ring-2 ring-inset ring-white bg-white shadow rounded-4xl overflow-hidden">
+            <div class="w-full lg:w-1/4 md:p-6 p-4">
+                <nav class="flex md:flex-col gap-y-2 max-md:overflow-x-scroll max-md:pb-2">
+                    <button
+                        class="tab-button md:w-full w-auto text-left md:text-base text-sm md:py-3 py-2 md:px-4 px-3 md:rounded-lg rounded-full cursor-pointer text-gray-700 hover:bg-[#333333]/10 hover:text-[#333333] transition duration-200 ease-in-out font-medium focus:outline-none focus:ring-2 focus:ring-[#333333] focus:ring-opacity-50 focus:ring-inset shrink-0 w-aute-tab"
+                        data-tab="general">
+                        General FAQs
+                    </button>
+                    <button
+                        class="tab-button md:w-full w-auto text-left md:text-base text-sm md:py-3 py-2 md:px-4 px-3 md:rounded-lg rounded-full cursor-pointer text-gray-700 hover:bg-[#333333]/10 hover:text-[#333333] transition duration-200 ease-in-out font-medium focus:outline-none focus:ring-2 focus:ring-[#333333] focus:ring-opacity-50 focus:ring-inset shrink-0"
+                        data-tab="points-rewards">
+                        Points and Rewards
+                    </button>
+                    <button
+                        class="tab-button md:w-full w-auto text-left md:text-base text-sm md:py-3 py-2 md:px-4 px-3 md:rounded-lg rounded-full cursor-pointer text-gray-700 hover:bg-[#333333]/10 hover:text-[#333333] transition duration-200 ease-in-out font-medium focus:outline-none focus:ring-2 focus:ring-[#333333] focus:ring-opacity-50 focus:ring-inset shrink-0"
+                        data-tab="loyalty-tiers">
+                        Loyalty Tiers
+                    </button>
+                    <button
+                        class="tab-button md:w-full w-auto text-left md:text-base text-sm md:py-3 py-2 md:px-4 px-3 md:rounded-lg rounded-full cursor-pointer text-gray-700 hover:bg-[#333333]/10 hover:text-[#333333] transition duration-200 ease-in-out font-medium focus:outline-none focus:ring-2 focus:ring-[#333333] focus:ring-opacity-50 focus:ring-inset shrink-0"
+                        data-tab="account-management">
+                        Account Management
+                    </button>
+                    <button
+                        class="tab-button md:w-full w-auto text-left md:text-base text-sm md:py-3 py-2 md:px-4 px-3 md:rounded-lg rounded-full cursor-pointer text-gray-700 hover:bg-[#333333]/10 hover:text-[#333333] transition duration-200 ease-in-out font-medium focus:outline-none focus:ring-2 focus:ring-[#333333] focus:ring-opacity-50 focus:ring-inset shrink-0"
+                        data-tab="technical-support">
+                        Technical Support
+                    </button>
+                </nav>
+            </div>
+            <div class="w-full lg:w-3/4 md:p-6 p-4 faq-content-scroll">
+                
+                <div id="general" class="tab-content active-content">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6 max-md:hidden">General FAQs</h3>
+                    <div class="space-y-4">
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">What is [Your Company Name]?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                [Your Company Name] is a leading platform dedicated to providing innovative solutions for your everyday needs. We aim to simplify processes and enhance user experience through our intuitive design and robust features.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do I get started?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Getting started is easy! Simply sign up for a new account, complete your profile, and you'll be ready to explore all the features our platform has to offer. We also have a guided tour for new users.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">Is it free to use?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                We offer both free and premium plans. The free plan provides access to core features, while premium plans unlock advanced functionalities and dedicated support. You can view our pricing details on the "Plans" page.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="points-rewards" class="tab-content hidden">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6 max-md:hidden">Points and Rewards</h3>
+                    <div class="space-y-4">
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do I earn points?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                You can earn points by completing various activities on our platform, such as referring friends, participating in surveys, or making eligible purchases. Keep an eye on our promotions for bonus point opportunities!
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">What can I redeem my points for?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Points can be redeemed for exclusive discounts, gift cards, premium features, and more through our rewards catalog. Visit the "Rewards" section to see available options.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">Do my points expire?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Yes, points typically expire 12 months after they are earned if not redeemed. We'll send you reminders before your points are about to expire.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="loyalty-tiers" class="tab-content hidden">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6 max-md:hidden">Loyalty Tiers</h3>
+                    <div class="space-y-4">
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do loyalty tiers work?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Our loyalty program has multiple tiers (e.g., Bronze, Silver, Gold, Platinum). As you accumulate points and engage with the platform, you'll automatically advance to higher tiers, unlocking greater benefits.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">What are the benefits of each tier?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Each tier offers unique perks, such as higher point earning rates, exclusive access to beta features, priority customer support, and special birthday rewards. Details for each tier are available in your "Loyalty Dashboard."
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do I advance to a higher tier?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Tier advancement is based on the total points you earn within a calendar year. Once you reach the required point threshold for a tier, you'll automatically be upgraded.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="account-management" class="tab-content hidden">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6 max-md:hidden">Account Management</h3>
+                    <div class="space-y-4">
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do I update my profile information?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                You can update your profile information by navigating to the "Settings" or "Profile" section of your account. Remember to save any changes you make.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do I change my password?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                To change your password, go to "Account Settings" and look for the "Change Password" option. You'll need to enter your current password and then your new password twice.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">Can I delete my account?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Yes, you can initiate account deletion from your "Account Settings" page. Please be aware that deleting your account is a permanent action and will remove all your data from our system.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="technical-support" class="tab-content hidden">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6 max-md:hidden">Technical Support</h3>
+                    <div class="space-y-4">
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">I'm having trouble logging in. What should I do?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                First, double-check your username and password. If you've forgotten your password, use the "Forgot Password" link on the login page. If the issue persists, please contact our support team.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">The website isn't loading correctly.</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                Try clearing your browser's cache and cookies, or try accessing the website from a different browser or device. If the problem continues, please provide us with details about your browser and device so we can investigate.
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                            <button class="accordion-header w-full flex justify-between items-center p-4 hover:bg-gray-100 transition duration-200 ease-in-out focus:outline-none md:text-base text-sm">
+                                <span class="font-medium text-gray-800">How do I report a bug?</span>
+                                <svg class="accordion-arrow w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-body hidden p-4 text-gray-600 bg-white border-t border-gray-200 md:text-sm text-xs">
+                                You can report bugs through our dedicated "Report a Bug" form, usually found in the "Help" or "Support" section. Please provide as much detail as possible, including steps to reproduce the bug and screenshots if applicable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 bg-gray-900 sm:py-16 lg:py-24">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <div class="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
+                  <div class="flex flex-col justify-between lg:py-5">
+                      <div>
+                          <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl">Get in Touch with Us!</h2>
+                          <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">Reach out to us for any inquiries or collaborations. We are here to help you succeed.</p>
+
+                          <img class="relative z-10 max-w-xs mx-auto -mb-16 md:hidden" src="./assets/img/curve-line-mobile.svg" alt="" />
+
+                          <img class="hidden w-full translate-x-24 translate-y-8 md:block" src="./assets/img/curve-line.svg" alt="" />
+                      </div>
+
+                      <div class="hidden md:mt-auto md:block">
+                          <div class="flex items-center">
+                              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                  <path
+                                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                  />
+                              </svg>
+                              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                  <path
+                                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                  />
+                              </svg>
+                              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                  <path
+                                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                  />
+                              </svg>
+                              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                  <path
+                                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                  />
+                              </svg>
+                          </div>
+
+                          <blockquote class="mt-6">
+                              <p class="text-lg leading-relaxed text-white">You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.</p>
+                          </blockquote>
+
+                          <div class="flex items-center mt-8">
+                              <img class="flex-shrink-0 object-cover w-10 md: rou h-6nded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                              <div class="ml-4">
+                                  <p class="text-base font-semibold text-white">Jenny Wilson</p>
+                                  <p class="mt-px text-sm text-gray-400">Product Designer</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="lg:pl-12">
+                      <div class="overflow-hidden bg-white rounded-3xl">
+                          <div class="p-6 sm:p-10">
+                              <h3 class="text-3xl font-semibold text-black">Get a free quote</h3>
+                              <p class="mt-4 text-base text-gray-600">Tell us about your project and get a free quote from our team in no time.</p>
+
+                              <form action="#" method="POST" class="mt-4">
+                                  <div class="space-y-6">
+                                      <div>
+                                          <label for="" class="text-base font-medium text-gray-900"> Your name </label>
+                                          <div class="mt-2.5 relative">
+                                              <input
+                                                  type="text"
+                                                  name=""
+                                                  id=""
+                                                  placeholder="Enter your full name"
+                                                  class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                                              />
+                                          </div>
+                                      </div>
+
+                                      <div>
+                                          <label for="" class="text-base font-medium text-gray-900"> Email address </label>
+                                          <div class="mt-2.5 relative">
+                                              <input
+                                                  type="text"
+                                                  name=""
+                                                  id=""
+                                                  placeholder="Enter your email address"
+                                                  class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                                              />
+                                          </div>
+                                      </div>
+
+                                      <div>
+                                          <label for="" class="text-base font-medium text-gray-900"> Project brief </label>
+                                          <div class="mt-2.5 relative">
+                                              <textarea
+                                                  name=""
+                                                  id=""
+                                                  placeholder="Enter a brief about your project"
+                                                  class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                                                  rows="4"
+                                              ></textarea>
+                                          </div>
+                                      </div>
+
+                                      <div>
+                                          <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-md focus:outline-none hover:bg-orange-600 focus:bg-orange-600">
+                                              Get Free Quote
+                                          </button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="md:hidden">
+                      <div class="flex items-center">
+                          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path
+                                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                          </svg>
+                          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path
+                                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                          </svg>
+                          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path
+                                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                          </svg>
+                          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path
+                                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                          </svg>
+                          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path
+                                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                          </svg>
+                      </div>
+
+                      <blockquote class="mt-6">
+                          <p class="text-lg leading-relaxed text-white">You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.</p>
+                      </blockquote>
+
+                      <div class="flex items-center mt-8">
+                          <img class="flex-shrink-0 object-cover w-10 md: rou h-6nded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                          <div class="ml-4">
+                              <p class="text-base font-semibold text-white">Jenny Wilson</p>
+                              <p class="mt-px text-sm text-gray-400">Product Designer</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    </main>
+
+    <footer class="py-12 bg-white sm:py-16 lg:py-20 rounded-t-4xl max-md:hidden">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <img class="w-auto md:h-8 h-6 mx-auto" src="./assets/img/petromin-logo.webp" alt="" />
+
+        <ul class="flex flex-wrap items-center justify-center space-x-12 md:space-x-16 mt-14">
+          <li>
+            <a href="#" title="" class="inline-flex text-lg font-medium text-gray-900 transition-all duration-200 transform font-pj hover:-translate-y-1 hover:text-gray-600"> Home </a>
+          </li>
+
+          <li>
+            <a href="#" title="" class="inline-flex text-lg font-medium text-gray-900 transition-all duration-200 transform font-pj hover:-translate-y-1 hover:text-gray-600"> Book Service </a>
+          </li>
+
+          <li>
+            <a href="#" title="" class="inline-flex text-lg font-medium text-gray-900 transition-all duration-200 transform font-pj hover:-translate-y-1 hover:text-gray-600"> Find Us </a>
+          </li>
+
+          <li>
+            <a href="#" title="" class="inline-flex mt-8 -ml-12 text-lg font-medium text-gray-900 transition-all duration-200 transform font-pj hover:-translate-y-1 hover:text-gray-600 sm:ml-0 sm:mt-0"> Rewards </a>
+          </li>
+
+          <li>
+            <a href="#" title="" class="inline-flex mt-8 text-lg font-medium text-gray-900 transition-all duration-200 transform font-pj hover:-translate-y-1 hover:text-gray-600 sm:mt-0"> Contact Us </a>
+          </li>
+        </ul>
+
+        <ul class="flex items-center mt-8 justify-center space-x-3">
+          <li>
+            <a href="#" target="_blank" title="Facebook" class="inline-flex items-center justify-center w-10 md: tex h-6t-blue-600 transition-all duration-200 rounded-full hover:bg-blue-50 focus:outline-none focus:bg-blue-100 focus:ring-2 focus:ring-offset-2 focus:ring-blue-200" rel="noopener">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank" title="Twitter" class="inline-flex items-center justify-center w-10 md: tex h-6t-sky-500 transition-all duration-200 rounded-full hover:bg-sky-50 focus:outline-none focus:bg-sky-100 focus:ring-2 focus:ring-offset-2 focus:ring-sky-200" rel="noopener">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank" title="Instagram" class="inline-flex items-center justify-center w-10 md: tex h-6t-pink-500 transition-all duration-200 rounded-full hover:bg-pink-50 focus:outline-none focus:bg-pink-100 focus:ring-2 focus:ring-offset-2 focus:ring-pink-200" rel="noopener">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank" title="LinkedIn" class="inline-flex items-center justify-center w-10 md: tex h-6t-blue-800 transition-all duration-200 rounded-full hover:bg-blue-100 focus:outline-none focus:bg-blue-200 focus:ring-2 focus:ring-offset-2 focus:ring-blue-300" rel="noopener">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="text-base font-normal text-center text-gray-600 mt-7 font-pj">Designed with ❤️ by PETROMINit</p>
+      </div>
+    </footer>
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Hero Section Swiper initialization
+        var heroSwiper = new Swiper(".heroSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // autoplay: {delay: 2500, disableOnInteraction: false},
+          speed: 1000,
+          loop: true,
+          keyboard: {enabled: true},
+          navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
+          scrollbar: {el: ".swiper-scrollbar", hide: true},
+          thumbs: {swiper: ".heroSwiperThumbs"},
+          breakpoints: {
+              320: {centeredSlides: true, slidesPerView: 1.2, spaceBetween: 16},
+              480: {centeredSlides: true, slidesPerView: 1.2, spaceBetween: 16},
+              640: {centeredSlides: true, slidesPerView: 1.2, spaceBetween: 20},
+              1024: {centeredSlides: false, slidesPerView: 2, spaceBetween: 40},
+              1350: {slidesPerView: 2, spaceBetween: 40}
+          }
+        });
+        // Hero Section Swiper initialization
+        var spacialOffers = new Swiper(".spacialOffers", {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          autoplay: {delay: 2500, disableOnInteraction: false},
+          speed: 1000,
+          loop: true,
+          centeredSlides: true,
+          navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
+          breakpoints: {
+              320: {slidesPerView: 1.2, spaceBetween: 16},
+              480: {slidesPerView: 1.3, spaceBetween: 32},
+              640: {slidesPerView: 1.5, spaceBetween: 32},
+              1024: {slidesPerView: 2, spaceBetween: 48},
+              1350: {slidesPerView: 2, spaceBetween: 48}
+          }
+        });
+
+        // Hero Section Swiper initialization
+        // var heroSwiper = new Swiper(".heroSwiperThumbs", {
+        //   slidesPerView: 1,
+        //   effect: "fade",
+        //   speed: 5500,
+        //   pagination:false,
+        //   navigation:false
+        // });
+
+        // Special Offers Swiper initialization
+        var specialOffersSwiper = new Swiper(".specialOffersSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+            },
+            loop: true,
+        });
+    // Profile Dropdown functionality
+    const profileBtn = document.getElementById('profileDropdownBtn');
+    const profileMenu = document.getElementById('profileDropdownMenu');
+    document.addEventListener('click', function(e) {
+      const wrapper = document.getElementById('profileDropdownWrapper');
+      if (profileBtn && profileMenu) {
+        if (profileBtn.contains(e.target)) {
+          profileMenu.classList.toggle('hidden');
+        } else if (!profileMenu.contains(e.target)) {
+          profileMenu.classList.add('hidden');
+        }
+      }
+    });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            // Function to handle tab switching
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active styles from all tabs
+                    tabButtons.forEach(btn => btn.classList.remove('active-tab', '!bg-[#333333]', '!text-white'));
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.add('hidden'));
+
+                    // Add active styles to the clicked tab
+                    button.classList.add('active-tab', '!bg-[#333333]', '!text-white');
+                    // Show the corresponding tab content
+                    const targetTabId = button.dataset.tab;
+                    document.getElementById(targetTabId).classList.remove('hidden');
+
+                    // Scroll to top of the FAQ content when switching tabs
+                    document.querySelector('.faq-content-scroll').scrollTop = 0;
+
+                    // Close all accordions when switching tabs
+                    accordionHeaders.forEach(header => {
+                        const accordionBody = header.nextElementSibling;
+                        const arrow = header.querySelector('.accordion-arrow');
+                        if (!accordionBody.classList.contains('hidden')) {
+                            accordionBody.classList.add('hidden');
+                            arrow.classList.remove('rotate-180');
+                        }
+                    });
+                });
+            });
+
+            // Set initial active tab (General FAQs)
+            document.querySelector('.tab-button[data-tab="general"]').click();
+
+
+            // Function to handle accordion toggling
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordionBody = header.nextElementSibling;
+                    const arrow = header.querySelector('.accordion-arrow');
+
+                    // Check if the clicked accordion is already open
+                    const isOpen = !accordionBody.classList.contains('hidden');
+
+                    // Close all accordions first
+                    accordionHeaders.forEach(otherHeader => {
+                        const otherAccordionBody = otherHeader.nextElementSibling;
+                        const otherArrow = otherHeader.querySelector('.accordion-arrow');
+                        if (!otherAccordionBody.classList.contains('hidden')) {
+                            otherAccordionBody.classList.add('hidden');
+                            otherArrow.classList.remove('rotate-180');
+                        }
+                    });
+
+                    // If the clicked accordion was not open, open it
+                    if (!isOpen) {
+                        accordionBody.classList.remove('hidden');
+                        arrow.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
