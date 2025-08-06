@@ -1820,6 +1820,16 @@
       display: none !important;
     }
   }
+  .active\:max-lg\:scale-95 {
+    &:active {
+      @media (width < 64rem) {
+        --tw-scale-x: 95%;
+        --tw-scale-y: 95%;
+        --tw-scale-z: 95%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .max-md\:hidden {
     @media (width < 48rem) {
       display: none;
