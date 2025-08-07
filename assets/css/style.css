@@ -2180,6 +2180,27 @@
       scale: var(--tw-scale-x) var(--tw-scale-y) !important;
     }
   }
+  .active\:bg-gray-100\/50 {
+    &:active {
+      background-color: color-mix(in srgb, oklch(96.7% 0.003 264.542) 50%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-gray-100) 50%, transparent);
+      }
+    }
+  }
+  .active\:bg-rose-100\/50 {
+    &:active {
+      background-color: color-mix(in srgb, oklch(94.1% 0.03 12.58) 50%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-rose-100) 50%, transparent);
+      }
+    }
+  }
+  .active\:text-rose-800 {
+    &:active {
+      color: var(--color-rose-800);
+    }
+  }
   .disabled\:pointer-events-none {
     &:disabled {
       pointer-events: none;
