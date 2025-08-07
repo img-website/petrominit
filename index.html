@@ -17,8 +17,9 @@
 <body class="text-gray-800 bg-white font-montserrat">
 
     
-    <header class="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-sm border-b border-white/10 shadow-lg rounded-b-3xl">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-6 py-4 flex items-center justify-between">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 shadow-lg rounded-b-3xl">
+      <div class="absolute inset-0 z-0 bg-white/70 backdrop-blur-sm"></div>
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 md:py-6 py-4 flex items-center justify-between relative z-10">
         <div class="flex items-center gap-10">
           <a href="#" class="flex items-center gap-2">
             <img src="./assets/img/petromin-logo.webp" alt="PETROMINit Logo" class="md:h-10 h-6 drop-shadow-lg">
@@ -49,10 +50,10 @@
               <span class="hidden md:block font-semibold">Kaif S</span>
               <svg class="size-4 ml-1 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div id="profileDropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg p-2 z-50 border border-gray-100">
-              <a href="#" class="block px-4 py-2 rounded-md text-sm duration-300 text-gray-700 hover:lg:bg-gray-100">My Profile</a>
-              <a href="#" class="block px-4 py-2 rounded-md text-sm duration-300 text-gray-700 hover:lg:bg-gray-100">Settings</a>
-              <a href="#" class="block px-4 py-2 rounded-md text-sm duration-300 text-gray-700 hover:lg:bg-rose-100 hover:lg:text-rose-800">Logout</a>
+            <div id="profileDropdownMenu" class="hidden absolute right-0 mt-2 w-52 bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-4 z-50 border border-gray-100">
+              <a href="#" class="block px-4 py-2 rounded-xl text-sm duration-300 font-semibold text-gray-700 hover:lg:bg-gray-100/50">My Profile</a>
+              <a href="#" class="block px-4 py-2 rounded-xl text-sm duration-300 font-semibold text-gray-700 hover:lg:bg-gray-100/50">Settings</a>
+              <a href="#" class="block px-4 py-2 rounded-xl text-sm duration-300 font-semibold text-gray-700 hover:lg:bg-rose-100/50 hover:lg:text-rose-800">Logout</a>
             </div>
           </div>
         </div>
