@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETROMINit - Homepage</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="text-gray-800 bg-white font-montserrat">
+
+    
+    <main class="">
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl w-full m-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="p-8 md:p-12">
+            <h2 class="text-2xl font-bold text-gray-900">Welcome back</h2>
+            <p class="text-gray-600 mt-2">Login to your Acme Inc account</p>
+            <form class="mt-8 space-y-6">
+              <div>
+                <label class="text-sm font-medium text-gray-700" for="email">Email</label>
+                <input autocomplete="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="email" name="email" required="" type="email" value="m@example.com" />
+              </div>
+              <div>
+                <div class="flex items-center justify-between">
+                  <label class="text-sm font-medium text-gray-700" for="password">Password</label>
+                  <a class="text-sm font-medium text-indigo-600 hover:text-indigo-500" href="#">Forgot your password?</a>
+                </div>
+                <input autocomplete="current-password" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="password" name="password" required="" type="password" />
+              </div>
+              <div>
+                <button class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="submit">
+                  Login
+                </button>
+              </div>
+            </form>
+            <div class="mt-6">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="px-2 bg-white text-gray-500">
+                    Or continue with
+                  </span>
+                </div>
+              </div>
+              <div class="mt-6 grid grid-cols-3 gap-3">
+                <div>
+                  <a class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50" href="#">
+                    <span class="sr-only">Sign in with Apple</span>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10.325 4.138c.954 0 1.834.42 2.535 1.12l.24.232c.11.104.164.248.164.392 0 .144-.055.288-.164.392l-1.02 1.018c-.11.104-.254.158-.403.158-.15 0-.294-.054-.403-.158-.456-.446-.983-.69-1.57-.69-.588 0-1.114.244-1.57.69-.11.104-.254.158-.403.158s-.294-.054-.403-.158L6.21 7.272c-.11-.104-.165-.248-.165-.392s.055-.288.165-.392l.24-.232C7.15 4.558 8.03 4.138 8.985 4.138h1.34zM5.13 11.837c0-.144.055-.288.165-.392l1.02-1.018c.11-.104.254-.158.403-.158s.294.054.403.158c.456.446.983.69 1.57.69.588 0 1.114-.244 1.57-.69.11-.104.254-.158.403-.158s.294.054.403.158l1.02 1.018c.11.104.165.248.165.392s-.055.288-.165.392l-1.02 1.018c-.11.104-.254.158-.403.158s-.294-.054-.403-.158c-.456-.446-.983-.69-1.57-.69-.588 0-1.114.244-1.57-.69-.11-.104-.254-.158-.403-.158s-.294-.054-.403-.158L5.295 12.23c-.11-.104-.165-.248-.165-.392z"></path>
+                      <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.03 1.513a8.96 8.96 0 011.94 0l.21.05c.09.02.16.11.16.21V3.5c0 .05-.02.1-.06.14l-.05.05a7.004 7.004 0 00-2.38 0l-.05-.05a.2.2 0 01-.06-.14V1.773c0-.1.07-.19.16-.21l.21-.05zM3.5 9.03a8.96 8.96 0 010-1.94l-.05-.21a.2.2 0 01.21-.16h1.96c.05 0 .1.02.14.06l.05.05a7.004 7.004 0 000 2.38l-.05.05a.2.2 0 01-.14.06H3.66a.2.2 0 01-.21-.16l-.05-.21zm12.92 1.94a8.96 8.96 0 010-1.94l.05-.21c.02-.09.11-.16.21-.16h1.96c.05 0 .1.02.14.06l.05.05a7.004 7.004 0 000 2.38l-.05.05a.2.2 0 01-.14.06h-1.96a.2.2 0 01-.21-.16l-.05-.21zM11.18 15.21c-.59.27-1.24.41-1.9.41s-1.31-.14-1.9-.41l-.15-.07c-.08-.04-.15-.12-.15-.21v-1.96c0-.05.02-.1.06-.14l.05-.05a7.003 7.003 0 002.98 0l.05.05c.04.04.06.09.06.14v1.96c0 .09-.07.17-.15.21l-.15.07z" fill-rule="evenodd"></path>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                  <a class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50" href="#">
+                    <span class="sr-only">Sign in with Google</span>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.21 13.39A6.5 6.5 0 014.5 10c0-1.6.59-3.05 1.53-4.14l.08-.09.1-.08A6.5 6.5 0 0110 3.5c1.82 0 3.42.75 4.58 1.97l.1.1.08.09A6.5 6.5 0 0115.5 10c0 1.6-.59 3.05-1.53 4.14l-.08.09-.1.08A6.5 6.5 0 0110 16.5c-1.82 0-3.42-.75-4.58-1.97l-.1-.1zM10 5.75c-1.42 0-2.6.9-3.03 2.12.35.1.72.13 1.03.13 1.5 0 2.8-.83 3.47-2.03A3.49 3.49 0 0010 5.75zm0 8.5c1.42 0 2.6-.9 3.03-2.12-.35-.1-.72-.13-1.03-.13-1.5 0-2.8.83-3.47 2.03A3.49 3.49 0 0010 14.25z"></path>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                  <a class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50" href="#">
+                    <span class="sr-only">Sign in with Facebook</span>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 1.5a6.5 6.5 0 110 13 6.5 6.5 0 010-13z"></path>
+                      <path d="M10 5.25a.75.75 0 00-1.5 0v3.5h-3.5a.75.75 0 000 1.5h3.5v3.5a.75.75 0 001.5 0v-3.5h3.5a.75.75 0 000-1.5h-3.5v-3.5z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="mt-8 text-center text-sm text-gray-600">
+              Don't have an account?
+              <a class="font-medium text-indigo-600 hover:text-indigo-500" href="#">
+                Sign up
+              </a>
+            </p>
+          </div>
+          <div class="bg-gray-50 flex items-center justify-center p-8">
+            <div class="w-full h-full flex items-center justify-center">
+              <span class="material-icons text-gray-300" style="font-size: 96px;">
+                image
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-4 text-center w-full text-xs text-gray-500">
+        By clicking continue, you agree to our <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Privacy Policy</a>.
+      </div>
+    </main>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Hero Section Swiper initialization
+        var heroSwiper = new Swiper(".heroSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // autoplay: {delay: 2500, disableOnInteraction: false},
+          speed: 1000,
+          loop: true,
+          keyboard: {enabled: true},
+          navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
+          scrollbar: {el: ".swiper-scrollbar", hide: true},
+          thumbs: {swiper: ".heroSwiperThumbs"},
+          breakpoints: {
+              320: {centeredSlides: true, slidesPerView: 1.2, spaceBetween: 16},
+              480: {centeredSlides: true, slidesPerView: 1.2, spaceBetween: 16},
+              640: {centeredSlides: true, slidesPerView: 1.2, spaceBetween: 20},
+              1024: {centeredSlides: false, slidesPerView: 2, spaceBetween: 40},
+              1350: {slidesPerView: 2, spaceBetween: 40}
+          }
+        });
+        // Hero Section Swiper initialization
+        var spacialOffers = new Swiper(".spacialOffers", {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          autoplay: {delay: 2500, disableOnInteraction: false},
+          speed: 1000,
+          loop: true,
+          centeredSlides: true,
+          navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
+          breakpoints: {
+              320: {slidesPerView: 1.2, spaceBetween: 16},
+              480: {slidesPerView: 1.3, spaceBetween: 32},
+              640: {slidesPerView: 1.5, spaceBetween: 32},
+              1024: {slidesPerView: 2, spaceBetween: 48},
+              1350: {slidesPerView: 2, spaceBetween: 48}
+          }
+        });
+
+        // Hero Section Swiper initialization
+        // var heroSwiper = new Swiper(".heroSwiperThumbs", {
+        //   slidesPerView: 1,
+        //   effect: "fade",
+        //   speed: 5500,
+        //   pagination:false,
+        //   navigation:false
+        // });
+
+        // Special Offers Swiper initialization
+        var specialOffersSwiper = new Swiper(".specialOffersSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+            },
+            loop: true,
+        });
+    // Profile Dropdown functionality
+    const profileBtn = document.getElementById('profileDropdownBtn');
+    const profileMenu = document.getElementById('profileDropdownMenu');
+    document.addEventListener('click', function(e) {
+      const wrapper = document.getElementById('profileDropdownWrapper');
+      if (profileBtn && profileMenu) {
+        if (profileBtn.contains(e.target)) {
+          profileMenu.classList.toggle('hidden');
+        } else if (!profileMenu.contains(e.target)) {
+          profileMenu.classList.add('hidden');
+        }
+      }
+    });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            // Function to handle tab switching
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active styles from all tabs
+                    tabButtons.forEach(btn => btn.classList.remove('active-tab', '!bg-[#333333]', '!text-white'));
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.add('hidden'));
+
+                    // Add active styles to the clicked tab
+                    button.classList.add('active-tab', '!bg-[#333333]', '!text-white');
+                    // Show the corresponding tab content
+                    const targetTabId = button.dataset.tab;
+                    document.getElementById(targetTabId).classList.remove('hidden');
+
+                    // Scroll to top of the FAQ content when switching tabs
+                    document.querySelector('.faq-content-scroll').scrollTop = 0;
+
+                    // Close all accordions when switching tabs
+                    accordionHeaders.forEach(header => {
+                        const accordionBody = header.nextElementSibling;
+                        const arrow = header.querySelector('.accordion-arrow');
+                        if (!accordionBody.classList.contains('hidden')) {
+                            accordionBody.classList.add('hidden');
+                            arrow.classList.remove('rotate-180');
+                        }
+                    });
+                });
+            });
+
+            // Set initial active tab (General FAQs)
+            document.querySelector('.tab-button[data-tab="general"]').click();
+
+
+            // Function to handle accordion toggling
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordionBody = header.nextElementSibling;
+                    const arrow = header.querySelector('.accordion-arrow');
+
+                    // Check if the clicked accordion is already open
+                    const isOpen = !accordionBody.classList.contains('hidden');
+
+                    // Close all accordions first
+                    accordionHeaders.forEach(otherHeader => {
+                        const otherAccordionBody = otherHeader.nextElementSibling;
+                        const otherArrow = otherHeader.querySelector('.accordion-arrow');
+                        if (!otherAccordionBody.classList.contains('hidden')) {
+                            otherAccordionBody.classList.add('hidden');
+                            otherArrow.classList.remove('rotate-180');
+                        }
+                    });
+
+                    // If the clicked accordion was not open, open it
+                    if (!isOpen) {
+                        accordionBody.classList.remove('hidden');
+                        arrow.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
