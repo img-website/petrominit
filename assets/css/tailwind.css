@@ -3,4 +3,24 @@
 @theme {
   --font-display: 'Inter', sans-serif; 
   --font-montserrat: 'Montserrat', sans-serif;
+
+  
+  --animate-custompulse: custompulse 2s infinite;
+  @keyframes custompulse {
+    0%, 100% { transform: scale(1); opacity: 1 }
+    50% { transform: scale(1.5); opacity: 0 }
+  }
+  
+  --animate-ring: ring 2s infinite;
+  @keyframes ring {
+    0% { transform: rotate(-15deg) }
+    2% { transform: rotate(15deg) }
+    4%,12% { transform: rotate(-18deg) }
+    6%,14% { transform: rotate(18deg) }
+    8% { transform: rotate(-22deg) }
+    10% { transform: rotate(22deg) }
+    16% { transform: rotate(-12deg) }
+    18% { transform: rotate(12deg) }
+    20%,100% { transform: rotate(0) }
+  }
 }
