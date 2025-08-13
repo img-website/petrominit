@@ -5,13 +5,13 @@
   --font-montserrat: 'Montserrat', sans-serif;
 
   
-  --animate-custompulse: custompulse 2s infinite;
+  --animate-custompulse: custompulse 4s infinite;
   @keyframes custompulse {
     0%, 100% { transform: scale(1); opacity: 1 }
     50% { transform: scale(1.5); opacity: 0 }
   }
   
-  --animate-ring: ring 2s infinite;
+  --animate-ring: ring 4s infinite;
   @keyframes ring {
     0% { transform: rotate(-15deg) }
     2% { transform: rotate(15deg) }
