@@ -2365,6 +2365,24 @@
       }
     }
   }
+  .group-hover\/rewards\:lg\:rotate-12 {
+    &:is(:where(.group\/rewards):hover *) {
+      @media (hover: hover) {
+        @media (width >= 64rem) {
+          rotate: 12deg;
+        }
+      }
+    }
+  }
+  .group-hover\/rewards\:lg\:rotate-45 {
+    &:is(:where(.group\/rewards):hover *) {
+      @media (hover: hover) {
+        @media (width >= 64rem) {
+          rotate: 45deg;
+        }
+      }
+    }
+  }
   .group-hover\/rewards\:lg\:rotate-90 {
     &:is(:where(.group\/rewards):hover *) {
       @media (hover: hover) {
@@ -2379,6 +2397,15 @@
       @media (hover: hover) {
         @media (width >= 64rem) {
           rotate: 180deg;
+        }
+      }
+    }
+  }
+  .group-hover\/rewards\:lg\:rotate-\[217deg\] {
+    &:is(:where(.group\/rewards):hover *) {
+      @media (hover: hover) {
+        @media (width >= 64rem) {
+          rotate: 217deg;
         }
       }
     }
