@@ -292,6 +292,9 @@
   .bottom-\[0\.75rem\] {
     bottom: 0.75rem;
   }
+  .bottom-\[12px\] {
+    bottom: 12px;
+  }
   .\!left-auto {
     left: auto !important;
   }
@@ -483,6 +486,9 @@
   .h-\[3\.75rem\] {
     height: 3.75rem;
   }
+  .h-\[60px\] {
+    height: 60px;
+  }
   .h-auto {
     height: auto;
   }
@@ -534,6 +540,9 @@
   .w-\[3\.75rem\] {
     width: 3.75rem;
   }
+  .w-\[60px\] {
+    width: 60px;
+  }
   .w-auto {
     width: auto;
   }
@@ -566,6 +575,9 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .origin-top {
+    transform-origin: top;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -931,6 +943,9 @@
   .pl-\[4\.25rem\] {
     padding-left: 4.25rem;
   }
+  .pl-\[68px\] {
+    padding-left: 68px;
+  }
   .text-center {
     text-align: center;
   }
@@ -966,6 +981,9 @@
   }
   .text-\[0\.625rem\] {
     font-size: 0.625rem;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -1030,6 +1048,9 @@
   }
   .text-gray-900 {
     color: var(--color-gray-900);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-white {
     color: var(--color-white);
@@ -1178,6 +1199,10 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
   .duration-700 {
     --tw-duration: 700ms;
     transition-duration: 700ms;
@@ -1189,6 +1214,9 @@
   .select-none {
     -webkit-user-select: none;
     user-select: none;
+  }
+  .\[transition\:500ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
+    transition: 500ms cubic-bezier(0.95, -0.13, 0, 1.38);
   }
   .\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
     transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
@@ -1283,6 +1311,16 @@
       }
     }
   }
+  .group-hover\/vehicle\:scale-105 {
+    &:is(:where(.group\/vehicle):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .group-\[\.active\]\/fav\:bg-\[\#d11f39\] {
     &:is(:where(.group\/fav):is(.active) *) {
       background-color: #d11f39;
@@ -1315,20 +1353,18 @@
       transition-duration: 700ms;
     }
   }
+  .group-\[\.swiper-slide-active\]\/slide\:scale-105 {
+    &:is(:where(.group\/slide):is(.swiper-slide-active) *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
   .group-\[\.swiper-slide-active\]\/vehicle\:translate-x-0 {
     &:is(:where(.group\/vehicle):is(.swiper-slide-active) *) {
       --tw-translate-x: calc(var(--spacing) * 0);
       translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .group-\[\.swiper-slide-active\]\/vehicle\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/vehicle):is(.swiper-slide-active) *) {
-      transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
-    }
-  }
-  .group-\[\.swiper-slide-active\:not\(\:hover\)\]\/vehicle\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/vehicle):is(.swiper-slide-active:not(:hover)) *) {
-      transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
     }
   }
   .group-\[\.swiper-slide-next\]\:mr-auto {
@@ -1362,24 +1398,10 @@
       display: block !important;
     }
   }
-  .group-\[\.swiper-slide-active\]\/vehicle\:group-\[\:not\(\:hover\)\]\/veh\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/vehicle):is(.swiper-slide-active) *) {
-      &:is(:where(.group\/veh):is(:not(:hover)) *) {
-        transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
-      }
-    }
-  }
   .group-\[\.swiper-slide-active\]\/vehicle\:group-\[\:not\(\:hover\)\]\/veh\:\[transition\:1000ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
     &:is(:where(.group\/vehicle):is(.swiper-slide-active) *) {
       &:is(:where(.group\/veh):is(:not(:hover)) *) {
         transition: 1000ms cubic-bezier(0.95, -0.13, 0, 1.38);
-      }
-    }
-  }
-  .group-\[\.swiper-slide-next\]\/vehicle\:group-\[\:not\(\:hover\)\]\/veh\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/vehicle):is(.swiper-slide-next) *) {
-      &:is(:where(.group\/veh):is(:not(:hover)) *) {
-        transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
       }
     }
   }
@@ -1425,10 +1447,22 @@
       height: 4.75rem;
     }
   }
+  .before\:h-\[76px\] {
+    &::before {
+      content: var(--tw-content);
+      height: 76px;
+    }
+  }
   .before\:w-\[4\.75rem\] {
     &::before {
       content: var(--tw-content);
       width: 4.75rem;
+    }
+  }
+  .before\:w-\[76px\] {
+    &::before {
+      content: var(--tw-content);
+      width: 76px;
     }
   }
   .before\:animate-custompulse {
@@ -1537,10 +1571,22 @@
       height: 4.0625rem;
     }
   }
+  .after\:h-\[65px\] {
+    &::after {
+      content: var(--tw-content);
+      height: 65px;
+    }
+  }
   .after\:w-\[4\.0625rem\] {
     &::after {
       content: var(--tw-content);
       width: 4.0625rem;
+    }
+  }
+  .after\:w-\[65px\] {
+    &::after {
+      content: var(--tw-content);
+      width: 65px;
     }
   }
   .after\:animate-custompulse {
@@ -1590,10 +1636,45 @@
       }
     }
   }
+  .hover\:bg-blue-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-50);
+      }
+    }
+  }
+  .hover\:bg-blue-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-100);
+      }
+    }
+  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:bg-pink-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-pink-50);
+      }
+    }
+  }
+  .hover\:bg-red-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-50);
+      }
+    }
+  }
+  .hover\:bg-sky-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sky-50);
       }
     }
   }
@@ -1841,21 +1922,9 @@
       line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
-  .max-md\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    @media (width < 48rem) {
-      transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
-    }
-  }
   .max-md\:\[transition\:1000ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
     @media (width < 48rem) {
       transition: 1000ms cubic-bezier(0.95, -0.13, 0, 1.38);
-    }
-  }
-  .group-\[\:not\(\:hover\)\]\/veh\:max-md\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/veh):is(:not(:hover)) *) {
-      @media (width < 48rem) {
-        transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
-      }
     }
   }
   .max-sm\:hidden {
@@ -2010,6 +2079,11 @@
   .md\:bottom-\[0\.6875rem\] {
     @media (width >= 48rem) {
       bottom: 0.6875rem;
+    }
+  }
+  .md\:bottom-\[11px\] {
+    @media (width >= 48rem) {
+      bottom: 11px;
     }
   }
   .md\:-mx-6 {
@@ -2318,6 +2392,31 @@
       font-size: 1vw;
     }
   }
+  .md\:text-blue-600 {
+    @media (width >= 48rem) {
+      color: var(--color-blue-600);
+    }
+  }
+  .md\:text-blue-800 {
+    @media (width >= 48rem) {
+      color: var(--color-blue-800);
+    }
+  }
+  .md\:text-pink-500 {
+    @media (width >= 48rem) {
+      color: var(--color-pink-500);
+    }
+  }
+  .md\:text-red-600 {
+    @media (width >= 48rem) {
+      color: var(--color-red-600);
+    }
+  }
+  .md\:text-sky-500 {
+    @media (width >= 48rem) {
+      color: var(--color-sky-500);
+    }
+  }
   .md\:text-white {
     @media (width >= 48rem) {
       color: var(--color-white);
@@ -2335,6 +2434,16 @@
         @media (width >= 48rem) {
           --tw-translate-x: -100% !important;
           translate: var(--tw-translate-x) var(--tw-translate-y) !important;
+        }
+      }
+    }
+  }
+  .group-hover\/vehicle\:md\:-translate-x-full {
+    &:is(:where(.group\/vehicle):hover *) {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          --tw-translate-x: -100%;
+          translate: var(--tw-translate-x) var(--tw-translate-y);
         }
       }
     }
@@ -2357,15 +2466,6 @@
       }
     }
   }
-  .group-hover\/vehicle\:md\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/vehicle):hover *) {
-      @media (hover: hover) {
-        @media (width >= 48rem) {
-          transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
-        }
-      }
-    }
-  }
   .group-hover\/vehicle\:md\:\[transition\:1000ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
     &:is(:where(.group\/vehicle):hover *) {
       @media (hover: hover) {
@@ -2375,20 +2475,21 @@
       }
     }
   }
-  .group-\[\.swiper-slide-next\]\/vehicle\:md\:group-\[\:not\(\:hover\)\]\/veh\:\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
-    &:is(:where(.group\/vehicle):is(.swiper-slide-next) *) {
-      @media (width >= 48rem) {
-        &:is(:where(.group\/veh):is(:not(:hover)) *) {
-          transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
-        }
-      }
-    }
-  }
   .group-\[\.swiper-slide-next\]\/vehicle\:md\:group-\[\:not\(\:hover\)\]\/veh\:\[transition\:1000ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
     &:is(:where(.group\/vehicle):is(.swiper-slide-next) *) {
       @media (width >= 48rem) {
         &:is(:where(.group\/veh):is(:not(:hover)) *) {
           transition: 1000ms cubic-bezier(0.95, -0.13, 0, 1.38);
+        }
+      }
+    }
+  }
+  .hover\:md\:translate-x-0 {
+    &:hover {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          --tw-translate-x: calc(var(--spacing) * 0);
+          translate: var(--tw-translate-x) var(--tw-translate-y);
         }
       }
     }
@@ -2557,6 +2658,18 @@
       @media (hover: hover) {
         @media (width >= 64rem) {
           opacity: 100%;
+        }
+      }
+    }
+  }
+  .group-hover\/slide\:lg\:scale-105 {
+    &:is(:where(.group\/slide):hover *) {
+      @media (hover: hover) {
+        @media (width >= 64rem) {
+          --tw-scale-x: 105%;
+          --tw-scale-y: 105%;
+          --tw-scale-z: 105%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
         }
       }
     }
