@@ -1027,6 +1027,9 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -1192,6 +1195,9 @@
   }
   .\[transition\:500ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
     transition: 500ms cubic-bezier(0.95, -0.13, 0, 1.38);
+  }
+  .\[transition\:800ms_cubic-bezier\(0\.95\,_-0\.13\,_0\,_1\.38\)\] {
+    transition: 800ms cubic-bezier(0.95, -0.13, 0, 1.38);
   }
   .ring-inset {
     --tw-ring-inset: inset;
@@ -2335,10 +2341,63 @@
       color: var(--color-sky-500);
     }
   }
+  .md\:text-white {
+    @media (width >= 48rem) {
+      color: var(--color-white);
+    }
+  }
   .md\:ring-2 {
     @media (width >= 48rem) {
       --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .group-hover\/vehicle\:md\:\!-translate-x-full {
+    &:is(:where(.group\/vehicle):hover *) {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          --tw-translate-x: -100% !important;
+          translate: var(--tw-translate-x) var(--tw-translate-y) !important;
+        }
+      }
+    }
+  }
+  .group-hover\/vehicle\:md\:-translate-x-full {
+    &:is(:where(.group\/vehicle):hover *) {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          --tw-translate-x: -100%;
+          translate: var(--tw-translate-x) var(--tw-translate-y);
+        }
+      }
+    }
+  }
+  .group-hover\/vehicle\:md\:opacity-0 {
+    &:is(:where(.group\/vehicle):hover *) {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          opacity: 0%;
+        }
+      }
+    }
+  }
+  .group-hover\/vehicle\:md\:opacity-100 {
+    &:is(:where(.group\/vehicle):hover *) {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+  .hover\:md\:translate-x-0 {
+    &:hover {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          --tw-translate-x: calc(var(--spacing) * 0);
+          translate: var(--tw-translate-x) var(--tw-translate-y);
+        }
+      }
     }
   }
   .hover\:md\:border-\[\#d11f39\] {
@@ -2346,6 +2405,15 @@
       @media (hover: hover) {
         @media (width >= 48rem) {
           border-color: #d11f39;
+        }
+      }
+    }
+  }
+  .hover\:md\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        @media (width >= 48rem) {
+          background-color: var(--color-white);
         }
       }
     }
