@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth lg:text-[1vw]">
+<html lang="en" class="scroll-smooth md:text-[1vw]">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -234,7 +234,7 @@
         
       </section> -->
 
-      <section class="md:pb-10 flex flex-col md:gap-8 gap-4 w-full overflow-hidden relative bg-white">
+      <section class="md:pb-4 flex flex-col md:gap-8 gap-4 w-full overflow-hidden relative bg-white">
         <!-- <div class="flex flex-col items-center gap-3">
           <div class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold text-gray-800 text-center text-balance">Special Offers Just for You</div>
           <div class="lg:text-base md:text-sm text-xs font-medium text-gray-800 text-center text-balance">Unlock exclusive discounts, cashback, and service deals. Limited time only — grab them now!</div>
@@ -298,49 +298,53 @@
         
       </section>
 
-      <section class="md:py-10 pb-4 bg-gray-50">
+      <section class="md:py-10 pb-4 bg-gray-50 group/veh">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="swiper addVehicles w-full relative !z-10">
             <div class="swiper-wrapper !items-stretch !flex">
                 <div class="swiper-slide !h-auto group/vehicle">
-                  <a href="#" class="size-full relative bg-white rounded-2xl overflow-hidden flex items-end ring ring-inset ring-gray-800/10 hover:md:ring-[#d11f39] duration-300 transition-all md:p-6 p-4">
-                    <img 
-                        class="size-full object-cover object-center rounded-2xl [transition:800ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] translate-x-full group-[.swiper-slide-active]/vehicle:translate-x-0 group-[.swiper-slide-next]/vehicle:lg:translate-x-0 group-hover/vehicle:md:!-translate-x-full group-hover/vehicle:md:opacity-0"
+                  <a href="#" class="size-full relative bg-white rounded-2xl overflow-hidden flex flex-col justify-end ring ring-inset ring-gray-800/10 hover:md:ring-[#d11f39] duration-300 transition-all md:p-6 p-4">
+                    <div class="flex size-full relative group-hover/vehicle:md:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] max-md:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-[.swiper-slide-active]/vehicle:group-[:not(:hover)]/veh:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-[.swiper-slide-next]/vehicle:md:group-[:not(:hover)]/veh:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-hover/vehicle:md:!-translate-x-full group-hover/vehicle:md:opacity-100 translate-x-full group-[.swiper-slide-active]/vehicle:translate-x-0 group-[.swiper-slide-next]/vehicle:lg:translate-x-0">
+                      <img 
+                        class="size-full object-cover object-center rounded-2xl [transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)]"
                         loading="lazy"
                         width="860"
                         height="460"
                         src="./assets/img/fiery-red_0.webp"
                         alt="fiery-red_0"
-                    >
-                    <img 
-                        class="size-full object-cover object-center rounded-2xl [transition:800ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-hover/vehicle:md:!-translate-x-full opacity-0 group-hover/vehicle:md:opacity-100"
-                        loading="lazy"
-                        width="860"
-                        height="460"
-                        src="./assets/img/fiery-red_0.webp"
-                        alt="fiery-red_0"
-                    >
+                      >
+                      <img 
+                          class="size-full object-cover object-center rounded-2xl absolute inset-0 translate-x-full"
+                          loading="lazy"
+                          width="860"
+                          height="460"
+                          src="./assets/img/fiery-red_0.webp"
+                          alt="fiery-red_0"
+                      >
+                    </div>
                     <div class="w-full text-gray-600 font-semibold text-center"><span class="font-normal">Bajaj</span> - Qute</div>
                   </a>
                 </div>
                 <div class="swiper-slide !h-auto group/vehicle">
-                  <a href="#" class="size-full relative bg-white rounded-2xl overflow-hidden flex items-end ring ring-inset ring-gray-800/10 hover:md:ring-[#d11f39] duration-300 transition-all md:p-6 p-4">
-                    <img 
-                        class="size-full object-cover object-center rounded-2xl [transition:800ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] translate-x-full group-[.swiper-slide-active]/vehicle:translate-x-0 group-[.swiper-slide-next]/vehicle:lg:translate-x-0 group-hover/vehicle:md:!-translate-x-full group-hover/vehicle:md:opacity-0"
+                  <a href="#" class="size-full relative bg-white rounded-2xl overflow-hidden flex flex-col justify-end ring ring-inset ring-gray-800/10 hover:md:ring-[#d11f39] duration-300 transition-all md:p-6 p-4">
+                    <div class="flex size-full relative group-hover/vehicle:md:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] max-md:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-[.swiper-slide-active]/vehicle:group-[:not(:hover)]/veh:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-[.swiper-slide-next]/vehicle:md:group-[:not(:hover)]/veh:[transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-hover/vehicle:md:!-translate-x-full group-hover/vehicle:md:opacity-100 translate-x-full group-[.swiper-slide-active]/vehicle:translate-x-0 group-[.swiper-slide-next]/vehicle:lg:translate-x-0">
+                      <img 
+                        class="size-full object-cover object-center rounded-2xl [transition:1000ms_cubic-bezier(0.95,_-0.13,_0,_1.38)]"
                         loading="lazy"
                         width="860"
                         height="460"
                         src="./assets/img/polar-white_0.webp"
                         alt="polar-white_0"
-                    >
-                    <img 
-                        class="size-full object-cover object-center rounded-2xl [transition:800ms_cubic-bezier(0.95,_-0.13,_0,_1.38)] group-hover/vehicle:md:!-translate-x-full opacity-0 group-hover/vehicle:md:opacity-100"
-                        loading="lazy"
-                        width="860"
-                        height="460"
-                        src="./assets/img/polar-white_0.webp"
-                        alt="polar-white_0"
-                    >
+                      >
+                      <img 
+                          class="size-full object-cover object-center rounded-2xl absolute inset-0 translate-x-full"
+                          loading="lazy"
+                          width="860"
+                          height="460"
+                          src="./assets/img/polar-white_0.webp"
+                          alt="polar-white_0"
+                      >
+                    </div>
                     <div class="w-full text-gray-600 font-semibold text-center"><span class="font-normal">Bajaj</span> - Qute</div>
                   </a>
                 </div>
@@ -381,7 +385,7 @@
                   <a href="#" class="w-full h-full cursor-pointer bg-[#f4852c] md:rounded-2xl rounded-xl md:pl-6 sm:pl-4 max-sm:p-4 flex max-sm:flex-col-reverse flex-wrap relative group/card active:max-lg:scale-95 transition-transform duration-300 max-sm:gap-4">
                     <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 sm:pt-3 max-sm:grow">
                       <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-semibold text-white text-balance">Refer & Earn</div>
-                      <div class="w-full md:text-xs text-[10px] font-medium text-white max-sm:hidden">Invite friends and earn exciting rewards together</div>
+                      <div class="w-full md:text-xs text-[0.625rem] font-medium text-white max-sm:hidden">Invite friends and earn exciting rewards together</div>
                     </div>
                     <div class="w-full sm:p-3 flex sm:justify-end sm:-mt-6">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="md:max-w-20 sm:max-w-12 max-w-7 text-white w-full h-auto group-hover/card:lg:scale-95 transition-transform duration-300"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><path d="M8 6v8"/></svg>
@@ -392,7 +396,7 @@
                   <a href="#" class="w-full h-full cursor-pointer bg-[#d11f39] md:rounded-2xl rounded-xl md:pl-6 sm:pl-4 max-sm:p-4 flex max-sm:flex-col-reverse flex-wrap relative group/card active:max-lg:scale-95 transition-transform duration-300 max-sm:gap-4">
                     <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 sm:pt-3 max-sm:grow">
                       <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-semibold text-white text-balance">My Rewards</div>
-                      <div class="w-full md:text-xs text-[10px] font-medium text-white max-sm:hidden">Refer with your friends & earn more benefits</div>
+                      <div class="w-full md:text-xs text-[0.625rem] font-medium text-white max-sm:hidden">Refer with your friends & earn more benefits</div>
                     </div>
                     <div class="w-full sm:p-3 flex sm:justify-end sm:-mt-6">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="md:max-w-20 sm:max-w-12 max-w-7 text-white w-full h-auto group-hover/card:lg:scale-95 transition-transform duration-300"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
@@ -429,7 +433,7 @@
                   <a href="#" class="w-full h-full cursor-pointer bg-[#d11f39] md:rounded-2xl rounded-xl md:pl-6 sm:pl-4 max-sm:p-4 flex max-sm:flex-col-reverse flex-wrap relative group/card active:max-lg:scale-95 transition-transform duration-300 max-sm:gap-4">
                     <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 sm:pt-3 max-sm:grow">
                       <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-semibold text-white text-balance">Coupons</div>
-                      <div class="w-full md:text-xs text-[10px] font-medium text-white max-sm:hidden">Save more with exclusive discount coupons</div>
+                      <div class="w-full md:text-xs text-[0.625rem] font-medium text-white max-sm:hidden">Save more with exclusive discount coupons</div>
                     </div>
                     <div class="w-full sm:p-3 flex sm:justify-end sm:-mt-6">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="md:max-w-20 sm:max-w-12 max-w-7 text-white w-full h-auto group-hover/card:lg:scale-95 transition-transform duration-300"><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"/><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193"/><circle cx="10.5" cy="6.5" r=".5" fill="currentColor"/></svg>
@@ -440,7 +444,7 @@
                   <a href="#" class="w-full h-full cursor-pointer bg-[#f4852c] md:rounded-2xl rounded-xl md:pl-6 sm:pl-4 max-sm:p-4 flex max-sm:flex-col-reverse flex-wrap relative group/card active:max-lg:scale-95 transition-transform duration-300 max-sm:gap-4">
                     <div class="w-8/12 flex flex-col md:gap-3 gap-1.5 md:pt-6 sm:pt-3 max-sm:grow">
                       <div class="w-full xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm font-semibold text-white text-balance">Contact Us</div>
-                      <div class="w-full md:text-xs text-[10px] font-medium text-white max-sm:hidden">We’re here to help you anytime</div>
+                      <div class="w-full md:text-xs text-[0.625rem] font-medium text-white max-sm:hidden">We’re here to help you anytime</div>
                     </div>
                     <div class="w-full sm:p-3 flex sm:justify-end sm:-mt-6">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="md:max-w-20 sm:max-w-12 max-w-7 text-white w-full h-auto group-hover/card:lg:scale-95 transition-transform duration-300"><path d="M13 2a9 9 0 0 1 9 9"/><path d="M13 6a5 5 0 0 1 5 5"/><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
@@ -830,13 +834,13 @@
             id="whatsappLink"
             class="relative group z-[999999]"
         >
-            <span class="relative w-[60px] z-[100] h-[60px] bg-green-600 text-white rounded-full flex items-center justify-center text-2xl
+            <span class="relative w-[3.75rem] z-[100] h-[3.75rem] bg-green-600 text-white rounded-full flex items-center justify-center text-2xl
                         before:absolute 
-                        before:w-[76px] before:h-[76px] before:-z-[1] before:rounded-full before:border before:border-green-400 before:animate-custompulse
+                        before:w-[4.75rem] before:h-[4.75rem] before:-z-[1] before:rounded-full before:border before:border-green-400 before:animate-custompulse
                         after:absolute  after:-z-[1]
-                        after:w-[65px] after:h-[65px] after:rounded-full after:border after:bg-green-400 after:animate-custompulse
+                        after:w-[4.0625rem] after:h-[4.0625rem] after:rounded-full after:border after:bg-green-400 after:animate-custompulse
                         animate-ring">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.875rem" width="1.875rem" xmlns="http://www.w3.org/2000/svg">
                   <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
               </svg>
             </span>
@@ -884,14 +888,14 @@
         });
         // Add Vehicles Section Swiper initialization
         var addVehicles = new Swiper(".addVehicles", {
-          slidesPerView: 1,
+          slidesPerView: 1.2,
           spaceBetween: 16,
           // autoplay: {delay: 2500, disableOnInteraction: false},
           speed: 300,
           centeredSlides: false,
           // navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
           breakpoints: {
-              320: {slidesPerView: 1, speed: 300, spaceBetween: 16},
+              320: {slidesPerView: 1.2, speed: 300, spaceBetween: 16},
               480: {slidesPerView: 2, speed: 1000, spaceBetween: 16},
               640: {slidesPerView: 2, speed: 1000, spaceBetween: 32},
               1024: {slidesPerView: 3, speed: 1000, spaceBetween: 32},
